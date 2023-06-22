@@ -1,17 +1,354 @@
-<!DOCTYPE html>
-<html lang="en">
+<html
+    class="wf-museoslab-n3-active wf-effra-n5-active wf-museoslab-n7-active wf-museoslab-n5-active wf-effra-n3-active wf-museoslab-i5-active wf-effra-i7-active wf-effra-n7-active wf-effra-i4-active wf-effra-i3-active wf-effra-i5-active wf-museoslab-i7-active wf-franklingothicurw-n4-active wf-effra-n4-active wf-franklingothicurw-i4-active wf-active">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'ims3brg',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <title>Welcome to BOX at Senior Helpers</title>
+
 </head>
 
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
+    <style>
+        body {
+            font-family: effra, Verdana, Tahoma, "Open Sans", sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #000;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            position: relative;
+        }
+        .content {
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* Adjusts the background image size */
+            background-position: center;
+            /* Centers the background image */
+            margin: 0;
+            padding-top: 149px;
+            padding-bottom: 15px;
+            z-index: 1;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 90%;
+            background-image: url("/assets/pic.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.4;
+            /* Adjust the opacity to control the level of grey overlay */
+            z-index: -1;
+        }
+
+        #branding {
+            background-color: #fff !important;
+            z-index: 200;
+            width: 100%;
+            margin-top: 0px;
+            box-shadow: 0 0 .35714285714285715rem 0 rgba(0, 0, 0, .5);
+            /* min-height: 112px; */
+        }
+
+        #branding img {
+            max-height: 150px !important;
+            /* padding-bottom: 10px; */
+        }
+
+        .main-container {
+            padding-top: 37px;
+        }
+
+        #block-gtranslate-2 {
+            margin-top: 15px;
+            margin-right: 15px;
+        }
+
+        #block-boxonlycss {
+            max-width: 235px;
+            float: right;
+        }
+
+        .boxcontent-shadow {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            -webkit-box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, .4);
+            -moz-box-shadow: 2px 2px 6px .2px rgba(0, 0, 0, .4);
+            box-shadow: 2px 2px 6px .2px rgba(0, 0, 0, .4);
+        }
+
+        div.page-icons {
+            padding: 8px 8px 10px 8px;
+            border: 2px solid #39BFC9;
+            border-radius: 4px;
+            background: #fff;
+            -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .3);
+            -moz-box-shadow: 2px 2px 5px .2px rgba(0, 0, 0, .3);
+            box-shadow: 2px 2px 5px .2px rgba(0, 0, 0, .3);
+            max-width: 300px;
+            margin: 22px auto;
+        }
+
+        div.btn-page-icons .icon {
+            float: left;
+            width: 40px;
+            text-align: center;
+            padding: -1px 4px 10px 4px;
+            margin-right: 8px;
+            font-size: 2em;
+        }
+
+        div.btn-page-icons div.textbox {
+            height: auto;
+        }
+
+        div.page-icons div.textbox span.text {
+            height: auto;
+            display: table-cell;
+            vertical-align: middle;
+            font-weight: 100;
+            font-size: 1.15em;
+            line-height: 1.1em;
+        }
+
+        div.btn-page-icons>div.textbox>span.text>h3 {
+            margin-top: 0;
+        }
+
+        div.logoWidth {
+            max-width: 165px;
+            margin: 0 auto;
+        }
+
+        button.logoBtn {
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+            -webkit-box-shadow: 1px 1px 3px .2px rgba(0, 0, 0, .1);
+            -moz-box-shadow: 1px 1px 3px .2px rgba(0, 0, 0, .1);
+            box-shadow: 1px 1px 3px .2px rgba(0, 0, 0, .1);
+        }
+
+        div.logoBtn {
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+            -webkit-box-shadow: 1px 1px 3px .2px rgba(0, 0, 0, .1);
+            -moz-box-shadow: 1px 1px 3px .2px rgba(0, 0, 0, .1);
+            box-shadow: 1px 1px 3px .2px rgba(0, 0, 0, .1);
+        }
+
+        /* outline button */
+
+        a.sbu-outline-button,
+        .sbu-outline-button--red--transform {
+            display: block;
+            font-family: effra, "Arial", sans-serif;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 17px;
+            padding: 9px 14px;
+            text-decoration: none !important;
+            margin: 0 auto;
+            cursor: pointer;
+            letter-spacing: 0;
+            text-rendering: optimizeLegibility;
+            border-width: 2px;
+            border-style: solid;
+            text-align: center;
+            line-height: 1;
+        }
+
+        a.sbu-outline-button:hover {
+            text-decoration: none !important;
+        }
+
+        a.sbu-outline-button--red {
+            color: #900 !important;
+            border-color: #900 !important;
+        }
+
+        a.sbu-outline-button--red:hover {
+            color: #fff !important;
+            background: #900 !important;
+        }
+
+        a.sbu-outline-button--white {
+            color: #fff !important;
+            border-color: #fff !important;
+        }
+
+        a.sbu-outline-button--white:hover {
+            background: #900 !important;
+        }
+
+        a.sbu-outline-button--on-white {
+            background: #fff !important;
+        }
+
+        a.sbu-outline-button--on-red,
+        a.sbu-outline-button--on-red-hover:hover {
+            color: #fff !important;
+            background: #900 !important;
+        }
+
+        a.sbu-outline-button--on-red:hover {
+            background: #a00 !important;
+        }
+
+        a.sbu-outline-button.arrow-after {
+            padding: 10px 10px 10px 16px;
+        }
+
+        .subtitle {
+            font-size: 1.85em;
+            font-weight: 300;
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                width: 1170px;
+            }
+        }
+
+        .container {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        img {
+            border: 0;
+            max-width: 100%;
+            width: auto;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            line-height: 2em;
+            margin-top: 1em;
+            margin-bottom: .25em;
+            font-weight: bold;
+        }
+
+        .content img {
+            padding: 15px;
+        }
+    </style>
+
+    <div id="branding">
+        <div class="container">
+        </div>
+        <a class="navbar-btn" href="https://www.seniorhelpers.com/" title="Home" rel="home">
+            <img style="margin-left: 30px" src="assets/SH_logo_notag.jpg" alt="Home">
+        </a>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="boxcontent-shadow">
+            <p class="subtitle" style="text-align: center; color: #fff; background-color: #10069F; padding: 20px 0;">
+                Welcome to BOX for Senior Helpers</p>
+
+            <h2 style="text-align: center; margin-top: .9em">Select Your Organization</h2>
+
+            <div class="row" style="max-width: 610px; margin: 0 auto; margin-bottom: 20px; ">
+                <a id="IdOfLink1" type="button"
+                    style="width: 300px; margin: 0 auto; display: inline-block; padding: 6px 12px; border: 1px solid #10069F; text-align: center;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); border-radius: 4px;"
+                    href='https://sso.services.box.net/sp/startSSO.ping?PartnerIdpId=https%3A%2F%2Fsts.windows.net%2Fea262da8-9db1-4f74-a335-d32aa53e65b7%2F&TargetResource='>
+                    <img src="assets/H in color_100x100.jpg" alt="Icon"
+                        style="vertical-align: middle; margin-right: 20px; width: 170px; height: 170px;">
+                    <span style="color: #10069F;">CORPORATE</span>
+
+                </a>
+
+                <a id="IdOfLink2" type="button"
+                    style="width: 300px; margin: 0 auto; display: inline-block; padding: 6px 12px; margin-left: 10px; border: 1px solid #10069F; text-align: center;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); border-radius: 4px;"
+                    href="https://sso.services.box.net/sp/startSSO.ping?PartnerIdpId=https%3A%2F%2Fsts.windows.net%2F78ed00a1-d880-44b7-878d-2d86e0351ce5%2F&TargetResource=">
+                    <img src="assets/H in color_100x100.jpg" alt="Icon"
+                        style="vertical-align: middle; margin-right: 20px; width: 170px; height: 170px;">
+                    <span style="color: #10069F;">CORPORATE STORES</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+
+            var vars = {};
+
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
+
+                function (m, key, value) {
+
+                    vars[key] = value;
+
+                });
+
+            return vars;
+
+        }
+
+        function addTR(obj, tr) {
+
+            obj.href = obj.href + tr;
+
+        }
+
+        function SetTR(elementID) {
+
+            var tr = "#target_resource#";
+
+            if (getUrlVars()["TargetResource"]) {
+
+                tr = getUrlVars()["TargetResource"];
+
+            }
+
+            var element = document.getElementById(elementID);
+
+            addTR(element, tr);
+
+        }
+
+        // Must give each <a> an id 
+
+        // Each link must be given the TargetResource value
+
+        window.onload = SetTR("IdOfLink1");
+
+        window.onload = SetTR("IdOfLink2");
+
+    </script>
+
 </body>
+
 
 </html>
